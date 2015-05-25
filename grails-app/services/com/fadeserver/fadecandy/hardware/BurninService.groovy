@@ -28,9 +28,7 @@ class BurninService {
                     println "-------------"
                     t += 0.4;
                     def brightness = (int)(Math.min(1, 1.25 + Math.sin(t)) * 95);
-                    def myDefaultColor = new Color(brightness,brightness,brightness);
-
-                    def myHash = myDefaultColor.hashCode();
+                    def myHash = new Color(brightness,brightness,brightness).hashCode();
 
                     opcService.setPixel(0..totalLEDs-1, myHash);
                     opcService.writePixels();
