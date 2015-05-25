@@ -21,7 +21,7 @@ class BurninController {
 
         burninService.burnIn(totalLEDs);
 
-        def results = [rgb:myDefaultColor]
+        def results = [rgb:"#FFF"]
         render results as JSON
     }
 
