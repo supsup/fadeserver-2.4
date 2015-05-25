@@ -3,7 +3,11 @@
 Control Fadecandy through a grails 2.4.4 app.
 
   - Start Fadecandy Server @ 127.0.0.1:7890 (configurable @ grails-app/services/com/fadeserver/fadecandy/hardware/OpcService.groovy
-  - Run Grails app
+  - Run Grails app 
+    - go to folder you checked out file
+    - type grails run-app
+    - Alternativly you can use IntelliJ and run it from there
+    
   - Go to http://localhost:8080/fadeserver
 
 Sorta Pre-requesists:
